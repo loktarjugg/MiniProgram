@@ -18,6 +18,14 @@ $ composer require loktarjugg/mini-program
     ],
 ```
 
+> `Laravel` < 5.5 需要在 `config/app.php` 里手动注册`ServiceProvider`
+
+
+> `providers` 配置项里增加 `\LoktarJugg\MiniProgram\MiniProgramServiceProvider::class`
+
+
+> `aliases` 增加 `'MiniProgram' => \LoktarJugg\MiniProgram\MiniProgramFacade::class`
+
 ## 使用
 
 ```php
