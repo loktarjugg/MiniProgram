@@ -1,0 +1,28 @@
+{
+    "name": "loktarjugg/mini-program",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jacob",
+            "email": "syd_8906@126.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LoktarJugg\\MiniProgram\\": "./src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LoktarJugg\\MiniProgram\\MiniProgramServiceProvider"
+            ],
+            "aliases": {
+                "MiniProgram": "LoktarJugg\\MiniProgram\\MiniProgramFacade"
+            }
+        }
+    }
+}
